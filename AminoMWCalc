@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main() {
+    std::cout << "Please enter the number of atoms of each of the 5 elements to calculate the molecular weight of the amino acid.\n";
+    float oxygen;
+    float carbon;
+    float nitrogen;
+    float sulfur;
+    float hydrogen;
+    cout << "How many oxygen atoms?\n";
+    cin >>oxygen;
+    cout << "How many carbon atoms?\n";
+    cin >>carbon;
+    cout << "How many nitrogen atoms?\n";
+    cin >>nitrogen;
+    cout << "How many sulfur atoms?\n";
+    cin >>sulfur;
+    cout << "How many hydrogen atoms?\n";
+    cin >> hydrogen;
+    float weight = (oxygen*15.9994)+(carbon*12.011)+(nitrogen*14.00674)+(sulfur*32.066)+(hydrogen*1.00794);
+    cout << "Your total molecular weight for this amino acid is,\n" << weight << " grams per mole";
+}
